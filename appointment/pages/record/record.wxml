@@ -1,0 +1,29 @@
+<!--pages/record/record.wxml-->
+<view class = "back">    
+    <view class = "chooseConsume ">
+        <text class = "{{consumeFlag?'consuming':'consuming consuming-selet'}}" data-tab="0" bindtap="chooseConsume">待消费（{{consumingNum}}）</text>
+        <text class = "{{consumeFlag?'consumed consumed-selet':'consumed'}}" data-tab="1" bindtap="chooseConsume">已过期（{{consumedNum}}）</text>  
+    </view>
+</view>
+<template name="itemTem">
+    <view class ="itemsH">
+        <text class = "itemsHT">预约项目：{{item}}</text>
+        <text class = "itemsHT">预约门店：{{shop}}</text>
+        <text class = "itemsHT">预约时间：{{time}}</text>
+        <text class = "itemsHT">预约说明：{{explain}}</text>
+    </view> 
+</template>
+<template name="itemTem1">
+    <view class ="itemsH itemsHed">
+        <text class = "itemsHT">预约项目：{{item}}</text>
+        <text class = "itemsHT">预约门店：{{shop}}</text>
+        <text class = "itemsHT">预约时间：{{time}}</text>
+        <text class = "itemsHT">预约说明：{{explain}}</text>
+    </view> 
+</template>
+<view wx:for="{{consumingA}}" wx:key="" hidden = "{{consumeFlag==0?0:1}}">
+    <template is="itemTem" data="{{...item}}"></template>
+</view>
+<view wx:for="{{consumedA}}" wx:key="" hidden = "{{consumeFlag==1?0:1}}">
+    <template is="itemTem1" data="{{...item}}"></template>
+</view>

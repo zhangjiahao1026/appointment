@@ -1,0 +1,16 @@
+<!--pages/member/member.wxml-->
+<view class = "clubCardUp">
+    <view class = "cardM">
+        <image class = "kuiImage" src="../../images/kuibutang.png" ></image>
+        <view class = "cardMes">
+            <text class = "cardText">电子会员</text>
+            <text class = "cardText">会员等级：{{clubCardA[0].class}}</text>
+            <text class = "cardText">会员号：{{clubCardA[0].number}}</text>
+        </view>
+    </view>  
+    <image class = "QRIm" src="../../images/QR.png" /> 
+</view>
+<view class = "clubCardDown">
+    <text class = "cardT">电子会员卡</text>
+    <text class = "cardT">有效期：{{clubCardA[0].validLimit}}</text>
+</view>

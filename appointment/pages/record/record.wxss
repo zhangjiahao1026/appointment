@@ -1,0 +1,49 @@
+/* pages/record/record.wxss */
+.back{
+   background-color:#bcc2c2;
+   height:100%;
+   width:100%;
+}
+.chooseConsume{
+    display:flex;
+    justify-content:space-around;
+    height:80rpx;
+    background-color:#ffffff;
+    margin-bottom:10rpx;
+}
+.consuming{
+    height:60rpx;
+    padding-top:10rpx;
+    font-size: 30rpx;
+}
+.consuming-selet{
+    border-bottom:10rpx #ff0000 solid;
+}
+.consumed{
+    height:60rpx;
+    padding-top:10rpx;
+    font-size: 30rpx;
+}
+.consumed-selet{
+    border-bottom:10rpx #ff0000 solid;
+}
+.itemsH{
+    width:640rpx;
+    height:250rpx;
+    margin-top:30rpx;
+    margin-left:30rpx;
+    margin-right:30rpx;
+    padding:20rpx;
+    border: 1rpx #000000 solid;
+    border-radius:30rpx;
+    background-color:#ffffff;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.itemsHed{
+    background-color:#80ffff;
+}
+.itemsH{
+    font-size: 30rpx;
+}

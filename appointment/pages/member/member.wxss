@@ -1,0 +1,57 @@
+/* pages/member/member.wxss */
+.clubCardUp{
+    width:625rpx;
+    height:225rpx;
+    margin-top:30rpx;
+    margin-left:40rpx;
+    margin-right:40rpx;
+    padding:20rpx;
+    border: 3rpx #c0c0c0 solid;
+    border-bottom: 2rpx #c0c0c0 dashed;
+    border-top-left-radius:20rpx;
+    border-top-right-radius:20rpx;
+    background-color:#ffffff;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.clubCardDown{
+    width:645rpx;
+    height:35rpx;
+    margin-left:40rpx;
+    margin-right:40rpx; 
+    padding:5px;   
+    border: 3rpx #c0c0c0 solid;
+    border-top: 2rpx #c0c0c0 dashed;
+    border-bottom-left-radius:20rpx;
+    border-bottom-right-radius:20rpx;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.cardM{
+    width:550rpx;
+    display:flex;
+    flex-direction:row;
+}
+.kuiImage{
+    width:200rpx;
+    height:230rpx;
+    margin-right:45rpx;
+}
+.cardMes{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.cardText{
+    font-size: 30rpx;
+}
+.QRIm{
+    width:65rpx;
+    height:65rpx;
+}
+.cardT{
+    font-size:26rpx;
+    color:#c0c0c0;
+}
