@@ -1,0 +1,47 @@
+<!--pages/userMessage/userMessage.wxml-->
+<view class = "userMList">
+    <view class = "userMlists">
+        <text class = "userMT">姓名</text>
+        <input class="input" value = "{{userName}}" type = "string" placeholder="请输入用户名" bindinput ="userNameInput"/>
+    </view>   
+    <view class = "userMlists">
+        <text class = "userMT">性别</text>
+        <radio-group  bindchange="sexRadioChange">
+            <label class="sexLable" >
+                <radio class="sexRadio" value="man" checked="{{userSex=='man'?true:false}}"/>男
+                <radio class="sexRadio" value="woman" checked="{{userSex=='woman'?true:false}}"/>女
+            </label>
+        </radio-group>
+    </view>   
+    <view class = "userMlists">
+        <text class = "userMT">生日</text>
+        <input class="input" value = "{{userAge}}" type = "string" placeholder="例如 2008-8-8" bindinput ="userAgeInput"/>
+    </view>   
+    <view class = "userMlists">
+        <text class = "userMT">婚姻状态</text>
+        <radio-group  bindchange="marriageRadioChange">
+            <label class="marriageLable" >
+                <radio class="marriageRadio" value="Y" checked="{{userMarriage=='Y'?true:false}}"/>已婚
+                <radio class="marriageRadio" value="N" checked="{{userMarriage=='N'?true:false}}"/>未婚
+                <radio class="marriageRadio" value="O" checked="{{userMarriage=='O'?true:false}}"/>其他
+            </label>
+        </radio-group>
+    </view>   
+    <view class = "userMlists">
+        <text class = "userMT">手机号</text>
+        <input class="input" value = "{{userNumber}}" type = "string" placeholder="11位手机号" bindinput ="userNumberInput"/>
+    </view>   
+    <view class = "userMlists">
+        <text class = "userMT">身体状况</text>
+        <input class="input" value = "{{userHealth}}" type = "string" placeholder="输入个人身体状况（选填）" bindinput ="userHealthInput"/>
+    </view>   
+    <view class = "userMlists">
+        <text class = "userMT">推荐人</text>
+        <input class="input" value = "{{rNumber}}" type = "string" placeholder="推荐人手机号（选填）" bindinput ="rNumberInput"/>
+    </view> 
+    <view class = "userMlists1">
+        <text class = "userMT">备注</text>    
+    </view>  
+    <textarea class = "userRemarkS" bindblur="userRemarkInput" value = "{{userRemark}}"  placeholder="如：家住武昌区积玉桥附近，职业为设计师（选填）" /> 
+    <button class = "saveB" hover-class = "saveB1" bindtap="saveTab" >保存</button>
+</view>

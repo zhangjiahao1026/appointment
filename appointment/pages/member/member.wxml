@@ -4,42 +4,42 @@
         <image class = "kuiImage" src="../../images/kuibutang.png" ></image>
         <view class = "cardMes">
             <text class = "cardText">电子会员</text>
-            <text class = "cardText">会员等级：{{clubCardA[0].class}}</text>
-            <text class = "cardText">会员号：{{clubCardA[0].number}}</text>
+            <text class = "cardText">会员等级：{{clubClass}}</text>
+            <text class = "cardText">会员号：{{clubNumber}}</text>
         </view>
     </view>  
     <image class = "QRIm" src="../../images/QR.png" /> 
 </view>
 <view class = "clubCardDown">
     <text class = "cardT">电子会员卡</text>
-    <text class = "cardT">有效期：{{clubCardA[0].validLimit}}</text>
+    <text class = "cardT">有效期：{{clubValidLimit}}</text>
 </view>
 <view class = "tip">
     <view class = "therapist">
         <text class = "tipT">私人理疗师</text>
-        <text class = "tipT">{{clubCardA[0].therapistN}}</text>
+        <text class = "tipT">{{clubTherapistN}}</text>
     </view>
     <view class = "suggest">
         <text class = "tipT">建议酵素浴次数</text>
-        <text class = "tipT">{{clubCardA[0].suggestNum}}次</text>
+        <text class = "tipT">{{clubSuggestNum}}次</text>
     </view>
 </view>
 <view class = "list">
-    <view class = "listS">
+    <view class = "listS" bindtap = "userMestab">
         <text class = "listT">个人信息</text>
         <text class = "listTC">查看  ></text>
     </view>
     <view class = "listS">
         <text class = "listT">储值</text>
-        <text class = "listTC">{{clubCardA[0].storedValue}}元  ></text>
+        <text class = "listTC">{{clubStoredValue}}元  ></text>
     </view>
     <view class = "listS">
         <text class = "listT">优惠券</text>
-        <text class = "listTC">{{clubCardA[0].couponNum}}张  ></text>
+        <text class = "listTC">{{clubCouponNum}}张  ></text>
     </view>
     <view class = "listS">
         <text class = "listT">消费记录</text>
-        <text class = "listTC">{{clubCardA[0].shopNum}}笔  ></text>
+        <text class = "listTC">{{clubShopNum}}笔  ></text>
     </view>
     <view class = "listS1">
         <text class = "listT">关于跬步堂</text>

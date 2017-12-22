@@ -1,30 +1,43 @@
 // pages/member/member.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    clubCardA:[
-      {
-        "class":"普通会员",
-        "number":"62218425",
-        "validLimit":"长期有效",
-        "therapistN":"阿丽 13号",
-        "suggestNum":3,
-        "storedValue":1320,
-        "couponNum":2,
-        "shopNum":4,
-      }
-    ]
+    
+    clubClass:"",
+    clubNumber:"",
+    clubValidLimit:"",
+    clubTherapistN:"",
+    clubSuggestNum:0,
+    clubStoredValue:0,
+    clubCouponNum:0,
+    clubShopNum:0,
   
   },
 
+  userMestab:function(){
+    wx.navigateTo({
+      url:'../userMessage/userMessage'
+    }) 
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      clubClass : app.data.clubCardA[0].class,
+      clubNumber : app.data.clubCardA[0].number,
+      clubValidLimit : app.data.clubCardA[0].validLimit,
+      clubTherapistN : app.data.clubCardA[0].therapistN,
+      clubSuggestNum : app.data.clubCardA[0].suggestNum,
+      clubStoredValue : app.data.clubCardA[0].storedValue,
+      clubCouponNum : app.data.clubCardA[0].couponNum,
+      clubShopNum : app.data.clubCardA[0].shopNum,
+    });  
+    console.log("会员卡数据载入");
   },
 
   /**

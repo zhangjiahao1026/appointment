@@ -1,0 +1,67 @@
+/* pages/userMessage/userMessage.wxss */
+.userMList{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.userMlists{
+    width:80%;
+    height:100rpx;
+    border-bottom:1rpx #c0c0c0 solid;
+    padding-left:40rpx;
+    padding-right:40rpx;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+.userMlists1{
+    width:80%;
+    height:100rpx;
+    padding-left:40rpx;
+    padding-right:40rpx;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+.userRemarkS{
+    width:70%;
+    height:200rpx;
+    border:1rpx #c0c0c0 solid;
+    padding-left:40rpx;
+    padding-right:40rpx;
+}
+.userMT{
+    font-size:30rpx;
+}
+.sexRadio{
+    margin-left:100rpx;
+}
+.sexLable{
+    font-size:30rpx;
+}
+.marriageRadio{
+    margin-left:35rpx;
+}
+.marriageLable{
+    font-size:30rpx;
+}
+.input{
+   
+}
+.saveB{
+    margin-top:30rpx;
+    background-color: #ff8000;
+    color:#ffffff;
+    width:200rpx;
+    height:100rpx; 
+}
+.saveB1{
+    margin-top:30rpx;
+    background-color: #008000;
+    color:#ffffff;
+    width:200rpx;
+    height:100rpx; 
+}

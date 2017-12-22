@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/member/member",
     "pages/index/index",
+    "pages/userMessage/userMessage",
+    "pages/member/member",
     "pages/record/record",
-    "pages/logs/logs" 
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,7 +13,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "backgroundColor":"#ffffff",
+    "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -20,7 +21,6 @@
         "iconPath": "images/index.png",
         "selectedIconPath": "images/index_active.png"
       },
-     
       {
         "pagePath": "pages/record/record",
         "text": "记录",
@@ -30,12 +30,9 @@
       {
         "pagePath": "pages/member/member",
         "text": "我的",
-        "iconPath": "images/user.png",       
+        "iconPath": "images/user.png",
         "selectedIconPath": "images/user_active.png"
-        
       }
     ]
   }
-
 }
-
