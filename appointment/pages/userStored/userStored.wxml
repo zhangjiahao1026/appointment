@@ -1,0 +1,27 @@
+<!--pages/userStored/userStored.wxml-->
+<view class = "tipMessage">
+    <text class="tipT">可到店联系店员进行充值，享受更多优惠！</text>
+</view>
+<view class = "clubCardUp">
+    <view class = "cardM">
+        <image class = "kuiImage" src="../../images/kuibutang.png" ></image>
+        <view class = "cardMes">
+            <text class = "cardText">储值</text>
+            <text class = "cardText">{{storeValue}}元</text>
+        </view>
+    </view>  
+</view>
+<view class = "clubCardDown"></view>
+
+<view class = "clubCardUp">
+    <view class = "cardM">
+        <image class = "kuiImage" src="../../images/kuibutang.png" ></image>
+        <view class = "cardMes">
+            <text class = "cardText">余项目</text>
+            <view class = "remainItem">
+                <text class = "remainT" wx:for = "{{remainItemA}}"  wx:for-item="item" wx:key="">{{item.name}} {{item.num}}次</text>
+            </view>           
+        </view>
+    </view>  
+</view>
+<view class = "clubCardDown"></view>

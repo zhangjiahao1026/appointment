@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/userStored/userStored",
     "pages/index/index",
     "pages/userMessage/userMessage",
     "pages/member/member",

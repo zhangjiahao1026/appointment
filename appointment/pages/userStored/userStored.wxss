@@ -1,0 +1,77 @@
+/* pages/userStored/userStored.wxss */
+.tipMessage{
+    width:100%;
+    height:100rpx;
+    border:1rpx #c0c0c0 solid;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    
+}
+.tipT{
+    font-size:30rpx;
+    color:#c0c0cc;
+}
+.clubCardUp{
+    width:625rpx;
+    height:225rpx;
+    margin-top:30rpx;
+    margin-left:40rpx;
+    margin-right:40rpx;
+    padding:20rpx;
+    border: 3rpx #c0c0c0 solid;
+    border-bottom: 2rpx #c0c0c0 dashed;
+    border-top-left-radius:20rpx;
+    border-top-right-radius:20rpx;
+    background-color:#ffffff;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.clubCardDown{
+    width:645rpx;
+    height:35rpx;
+    margin-left:40rpx;
+    margin-right:40rpx; 
+    margin-bottom:40rpx;
+    padding:5px;   
+    border: 3rpx #c0c0c0 solid;
+    border-top: 2rpx #c0c0c0 dashed;
+    border-bottom-left-radius:20rpx;
+    border-bottom-right-radius:20rpx;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.cardM{
+    width:550rpx;
+    display:flex;
+    flex-direction:row; 
+}
+.kuiImage{
+    width:200rpx;
+    height:230rpx;
+    margin-right:45rpx;
+}
+.cardMes{
+    width:550rpx;
+    display:flex;
+    flex-direction:column;  
+}
+
+.cardText{
+    font-size: 50rpx;
+    color:#408080;
+}
+.remainItem{
+    height:100rpx;
+    display:flex;
+    flex-direction:column; 
+}
+.remainT{
+    font-size:30rpx;
+    margin:0;
+}
+
+

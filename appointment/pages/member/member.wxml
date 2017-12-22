@@ -29,7 +29,7 @@
         <text class = "listT">个人信息</text>
         <text class = "listTC">查看  ></text>
     </view>
-    <view class = "listS">
+    <view class = "listS" bindtap = "userStoredtab">
         <text class = "listT">储值</text>
         <text class = "listTC">{{clubStoredValue}}元  ></text>
     </view>
