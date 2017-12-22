@@ -14,3 +14,35 @@
     <text class = "cardT">电子会员卡</text>
     <text class = "cardT">有效期：{{clubCardA[0].validLimit}}</text>
 </view>
+<view class = "tip">
+    <view class = "therapist">
+        <text class = "tipT">私人理疗师</text>
+        <text class = "tipT">{{clubCardA[0].therapistN}}</text>
+    </view>
+    <view class = "suggest">
+        <text class = "tipT">建议酵素浴次数</text>
+        <text class = "tipT">{{clubCardA[0].suggestNum}}次</text>
+    </view>
+</view>
+<view class = "list">
+    <view class = "listS">
+        <text class = "listT">个人信息</text>
+        <text class = "listTC">查看  ></text>
+    </view>
+    <view class = "listS">
+        <text class = "listT">储值</text>
+        <text class = "listTC">{{clubCardA[0].storedValue}}元  ></text>
+    </view>
+    <view class = "listS">
+        <text class = "listT">优惠券</text>
+        <text class = "listTC">{{clubCardA[0].couponNum}}张  ></text>
+    </view>
+    <view class = "listS">
+        <text class = "listT">消费记录</text>
+        <text class = "listTC">{{clubCardA[0].shopNum}}笔  ></text>
+    </view>
+    <view class = "listS1">
+        <text class = "listT">关于跬步堂</text>
+        <text class = "listTC">  ></text>
+    </view>
+</view>

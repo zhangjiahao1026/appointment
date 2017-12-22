@@ -10,6 +10,11 @@ Page({
         "class":"普通会员",
         "number":"62218425",
         "validLimit":"长期有效",
+        "therapistN":"阿丽 13号",
+        "suggestNum":3,
+        "storedValue":1320,
+        "couponNum":2,
+        "shopNum":4,
       }
     ]
   
