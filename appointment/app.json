@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/shopHistory/shopHistory",
     "pages/discount/discount",
     "pages/record/record",
     "pages/userStored/userStored",

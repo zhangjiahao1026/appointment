@@ -33,6 +33,11 @@ Page({
       url:'../discount/discount'
     }) 
   },
+  shopHistorytab:function(){
+    wx.navigateTo({
+      url:'../shopHistory/shopHistory'
+    }) 
+  },
   /**
    * 生命周期函数--监听页面加载
    */

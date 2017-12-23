@@ -1,0 +1,37 @@
+/* pages/shopHistory/shopHistory.wxss */
+.shopH{
+    width:100%;
+    margin-top:50rpx;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.shopHis{
+    width:650rpx;
+    height:400rpx;
+    margin-bottom:40rpx;
+    border:1rpx #c0c0c0 solid;
+    border-radius:20rpx;
+    display:flex;
+}
+.historyTitle{
+    width:200rpx;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.historyT{
+    width:300rpx;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    
+}
+.HisT{
+    font-size:30rpx;
+    color:#408080;
+}
+.HisT1{
+    font-size:30rpx;
+}

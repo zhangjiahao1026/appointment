@@ -1,0 +1,19 @@
+<!--pages/shopHistory/shopHistory.wxml-->
+<view class = "shopH">
+    <view class = "shopHis" wx:for = "{{shopHistoryA}}" wx:key = "">
+        <view class = "historyTitle">
+            <text class = "HisT">消费金额：</text>
+            <text class = "HisT">交易门店：</text>
+            <text class = "HisT">券消费：</text>
+            <text class = "HisT">折扣：</text>
+            <text class = "HisT">交易时间：</text>
+        </view>
+        <view class = "historyT">
+            <text class = "HisT1">{{item.shopValue}}元</text>
+            <text class = "HisT1">{{item.storeName}}</text>
+            <text class = "HisT1">{{item.discountValue}}元</text>
+            <text class = "HisT1">{{item.discount}}</text>
+            <text class = "HisT1">{{item.time}}</text>
+        </view>
+    </view>
+</view>

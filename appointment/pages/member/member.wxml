@@ -37,7 +37,7 @@
         <text class = "listT">优惠券</text>
         <text class = "listTC">{{clubCouponNum}}张  ></text>
     </view>
-    <view class = "listS">
+    <view class = "listS" bindtap = "shopHistorytab">
         <text class = "listT">消费记录</text>
         <text class = "listTC">{{clubShopNum}}笔  ></text>
     </view>
