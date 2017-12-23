@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/userStored/userStored",
     "pages/index/index",
+    "pages/discount/discount",
+    "pages/record/record",
+    "pages/userStored/userStored",
     "pages/userMessage/userMessage",
     "pages/member/member",
-    "pages/record/record",
     "pages/logs/logs"
   ],
   "window": {

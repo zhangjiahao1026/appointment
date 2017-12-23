@@ -28,6 +28,11 @@ Page({
       url:'../userStored/userStored'
     }) 
   },
+  discounttab:function(){
+    wx.navigateTo({
+      url:'../discount/discount'
+    }) 
+  },
   /**
    * 生命周期函数--监听页面加载
    */

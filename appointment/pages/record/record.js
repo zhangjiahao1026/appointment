@@ -5,8 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-     consumingNum:1,
-     consumedNum:3,
      consumeFlag:0,
      consumingA:[      
         {

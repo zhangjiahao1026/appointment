@@ -1,0 +1,63 @@
+<!--pages/discount/discount.wxml-->
+<view class = "back">    
+    <view class = "chooseDiscount ">
+        <text class = "{{chooseDiscountF==0?'discountC discountC-selet':'discountC'}}" data-tab="0" bindtap="chooseDiscountTab">未使用（{{discount0A.length}}）</text>
+        <text class = "{{chooseDiscountF==1?'discountC discountC-selet':'discountC'}}" data-tab="1" bindtap="chooseDiscountTab">已使用（{{discount1A.length}}）</text>
+        <text class = "{{chooseDiscountF==2?'discountC discountC-selet':'discountC'}}" data-tab="2" bindtap="chooseDiscountTab">已过期（{{discount2A.length}}）</text>  
+    </view>
+</view>
+<view class = "void"></view>
+<view wx:for="{{discount0A}}" wx:key="" hidden = "{{chooseDiscountF==0?0:1}}">
+    <view class = "discountCardUp"> 
+            <view class = "discountMes">
+                <text class = "discountText">注册专用优惠券</text>
+                <text class = "discountTextV">¥{{item.value}}</text>
+            </view>   
+            <view class = "discountMes1">
+                <text class = "discountText">优惠券号：{{item.number}}</text>
+                <text class = "discountText">此优惠券仅用于</text>
+                <text class = "discountText1">{{item.itemName}}项目消费</text>
+                <text class = "discountText">解释权归跬步堂所有</text>
+            </view> 
+    </view>
+    <view class = "discountCardDown">
+        <text class = "discountT">{{item.value}}元电子优惠券</text>
+        <text class = "discountT">{{item.limitDate}}</text>
+    </view>
+</view>
+<view wx:for="{{discount1A}}" wx:key="" hidden = "{{chooseDiscountF==1?0:1}}">
+    <view class = "discountCardUp past"> 
+            <view class = "discountMes">
+                <text class = "discountText">注册专用优惠券</text>
+                <text class = "discountTextV">¥{{item.value}}</text>
+            </view>   
+            <view class = "discountMes1">
+                <text class = "discountText">优惠券号：{{item.number}}</text>
+                <text class = "discountText">此优惠券仅用于</text>
+                <text class = "discountText1">{{item.itemName}}项目消费</text>
+                <text class = "discountText">解释权归跬步堂所有</text>
+            </view> 
+    </view>
+    <view class = "discountCardDown past">
+        <text class = "discountT">{{item.value}}元电子优惠券</text>
+        <text class = "discountT">{{item.limitDate}}</text>
+    </view>
+</view>
+<view wx:for="{{discount2A}}" wx:key="" hidden = "{{chooseDiscountF==2?0:1}}">
+    <view class = "discountCardUp past"> 
+            <view class = "discountMes">
+                <text class = "discountText">注册专用优惠券</text>
+                <text class = "discountTextV">¥{{item.value}}</text>
+            </view>   
+            <view class = "discountMes1">
+                <text class = "discountText">优惠券号：{{item.number}}</text>
+                <text class = "discountText">此优惠券仅用于</text>
+                <text class = "discountText1">{{item.itemName}}项目消费</text>
+                <text class = "discountText">解释权归跬步堂所有</text>
+            </view> 
+    </view>
+    <view class = "discountCardDown past">
+        <text class = "discountT">{{item.value}}元电子优惠券</text>
+        <text class = "discountT">{{item.limitDate}}</text>
+    </view>
+</view>

@@ -33,7 +33,7 @@
         <text class = "listT">储值</text>
         <text class = "listTC">{{clubStoredValue}}元  ></text>
     </view>
-    <view class = "listS">
+    <view class = "listS" bindtap = "discounttab">
         <text class = "listT">优惠券</text>
         <text class = "listTC">{{clubCouponNum}}张  ></text>
     </view>

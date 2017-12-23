@@ -1,8 +1,8 @@
 <!--pages/record/record.wxml-->
 <view class = "back">    
     <view class = "chooseConsume ">
-        <text class = "{{consumeFlag?'consuming':'consuming consuming-selet'}}" data-tab="0" bindtap="chooseConsume">待消费（{{consumingNum}}）</text>
-        <text class = "{{consumeFlag?'consumed consumed-selet':'consumed'}}" data-tab="1" bindtap="chooseConsume">已过期（{{consumedNum}}）</text>  
+        <text class = "{{consumeFlag?'consuming':'consuming consuming-selet'}}" data-tab="0" bindtap="chooseConsume">待消费（{{consumingA.length}}）</text>
+        <text class = "{{consumeFlag?'consumed consumed-selet':'consumed'}}" data-tab="1" bindtap="chooseConsume">已过期（{{consumedA.length}}）</text>  
     </view>
 </view>
 <template name="itemTem">
@@ -21,6 +21,7 @@
         <text class = "itemsHT">预约说明：{{explain}}</text>
     </view> 
 </template>
+<view class = "void"></view>
 <view wx:for="{{consumingA}}" wx:key="" hidden = "{{consumeFlag==0?0:1}}">
     <template is="itemTem" data="{{...item}}"></template>
 </view>
