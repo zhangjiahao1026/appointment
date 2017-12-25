@@ -1,4 +1,4 @@
-// pages/shopHistory/shopHistory.js
+// pages/QRcard/QRcard.js
 var app = getApp();
 Page({
 
@@ -6,29 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    shopHistoryA:[
-      {
-      "shopValue":200,
-      "storeName":"跬步堂积玉桥店",
-      "discountValue":0,
-      "discount":"",
-      "time":"2017-06-05 14:00",
-      },
-      {
-        "shopValue":200,
-        "storeName":"跬步堂积玉桥店",
-        "discountValue":0,
-        "discount":"",
-        "time":"2017-06-05 14:00",
-      },
-      {
-        "shopValue":200,
-        "storeName":"跬步堂积玉桥店",
-        "discountValue":0,
-        "discount":"",
-        "time":"2017-06-05 14:00",
-      },
-    ]
+    memberClass:"",
+    memberNumber:"",
   
   },
 
@@ -36,7 +15,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    app.data.clubCardA[0].shopNum= this.data.shopHistoryA.length;
+      this.setData({
+        memberClass:app.data.clubCardA[0].class,
+        memberNumber:app.data.clubCardA[0].number,
+      });
+      console.log("会员页面数据载入");
   },
 
   /**

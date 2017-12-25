@@ -18,6 +18,11 @@ Page({
   
   },
 
+  QRcardtab:function(){
+    wx.navigateTo({
+      url:'../QRcard/QRcard'
+    }) 
+  },
   userMestab:function(){
     wx.navigateTo({
       url:'../userMessage/userMessage'
@@ -42,17 +47,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      clubClass : app.data.clubCardA[0].class,
-      clubNumber : app.data.clubCardA[0].number,
-      clubValidLimit : app.data.clubCardA[0].validLimit,
-      clubTherapistN : app.data.clubCardA[0].therapistN,
-      clubSuggestNum : app.data.clubCardA[0].suggestNum,
-      clubStoredValue : app.data.clubCardA[0].storedValue,
-      clubCouponNum : app.data.clubCardA[0].couponNum,
-      clubShopNum : app.data.clubCardA[0].shopNum,
-    });  
-    console.log("会员卡数据载入");
+   
   },
 
   /**
@@ -66,7 +61,17 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.setData({
+      clubClass : app.data.clubCardA[0].class,
+      clubNumber : app.data.clubCardA[0].number,
+      clubValidLimit : app.data.clubCardA[0].validLimit,
+      clubTherapistN : app.data.clubCardA[0].therapistN,
+      clubSuggestNum : app.data.clubCardA[0].suggestNum,
+      clubStoredValue : app.data.clubCardA[0].storedValue,
+      clubCouponNum : app.data.clubCardA[0].couponNum,
+      clubShopNum : app.data.clubCardA[0].shopNum,
+    });  
+    console.log("会员卡数据载入");
   },
 
   /**

@@ -1,0 +1,7 @@
+<!--pages/QRcard/QRcard.wxml-->
+<view class = "backQR">
+    <text class = "memberClassT">会员等级：{{memberClass}}</text>
+    <image class = "KUIBUImage" src="../../images/kuibutang.png" />
+    <image class = "QRImage" src="../../images/QR.png" />
+    <text class = "memberNT">会员号：{{memberNumber}}</text>
+</view>

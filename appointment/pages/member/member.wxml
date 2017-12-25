@@ -1,5 +1,5 @@
 <!--pages/member/member.wxml-->
-<view class = "clubCardUp">
+<view class = "clubCardUp" bindtap = "QRcardtab">
     <view class = "cardM">
         <image class = "kuiImage" src="../../images/kuibutang.png" ></image>
         <view class = "cardMes">
@@ -10,7 +10,7 @@
     </view>  
     <image class = "QRIm" src="../../images/QR.png" /> 
 </view>
-<view class = "clubCardDown">
+<view class = "clubCardDown" bindtap = "QRcardtab">
     <text class = "cardT">电子会员卡</text>
     <text class = "cardT">有效期：{{clubValidLimit}}</text>
 </view>
